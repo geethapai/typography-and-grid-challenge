@@ -94,11 +94,164 @@ sub {
 /* Demo Styles - Do most of your work here.                                                       */
 /* ============================================================================================== */
 
+/*  SECTIONS  */
+/*.section {
+  clear: both;
+  padding: 0px;
+  margin: 0px;*/
+}
+
+/*  COLUMN SETUP  */
+/*.col {
+  display: block;
+  float:left;
+  margin: 1% 0 1% 1.6%;
+}
+.col:first-child { margin-left: 0; }
+*/
+
+/*  GROUPING  */
+/*.group:before,
+.group:after {
+  content:"";
+  display:table;
+}
+.group:after {
+  clear:both;
+}
+.group {
+    zoom:1; *//* For IE 6/7 */
+}
+
+
+/*  GRID OF EIGHT   ============================================================================= */
+
+  
+.span_8_of_8 {
+  width: 100%;
+}
+
+.span_7_of_8 {
+  width: 87.3%; 
+}
+
+.span_6_of_8 {
+  width: 74.6%; 
+}
+
+.span_5_of_8 {
+  width: 61.9%; 
+}
+
+.span_4_of_8 {
+  width: 49.2%; 
+}
+
+.span_3_of_8 {
+  width: 36.5%;
+}
+
+.span_2_of_8 {
+  width: 23.8%; 
+}
+
+.span_1_of_8 {
+  width: 11.1%; 
+}
 
 
 
+/*  general styles   =================== */
+body {
+  padding: 1%;
+}
+
+p {
+  margin-bottom: 1%;
+}
+
+section {
+  padding: 1%;
+  margin: 0 auto;
+}
+
+.table-of-contents {
+  position: fixed;
+  right: -1%;
+}
+
+/* images */
+.img1 { /*gillsans*/
+  margin: 0 50%;
+}
+
+.img2 {/*drawing of woman*/
+}
+
+.img3 { /*northwind*/
+
+}
+
+.img4 { /*wisdom*/
+
+}
+
+.img5 { /*lapworth*/
+
+}
+
+.img6 { /*hotel*/
+
+}
+
+.img7 { /*hotel*/
+
+}
 
 /* Clearfix class =============================================================================== */
 .clearfix { *zoom: 1; }
 .clearfix:before, .clearfix:after { content: " "; display: table; }
 .clearfix:after { clear: both; }
+
+
+
+
+
+/*  GRID OF TEN media queries ==================================================================== */
+
+/*  GO FULL WIDTH AT LESS THAN 480 PIXELS */
+
+@media only screen and (max-width: 480px) {
+  .span_8_of_8 {
+    width: 100%; 
+  }
+  .span_7_of_8 {
+    width: 100%; 
+  }
+  .span_6_of_8 {
+    width: 100%; 
+  }
+  .span_5_of_8 {
+    width: 100%; 
+  }
+  .span_4_of_8 {
+    width: 100%; 
+  }
+  .span_3_of_8 {
+    width: 100%; 
+  }
+  .span_2_of_8 {
+    width: 100%; 
+  }
+  .span_1_of_8 {
+    width: 100%; 
+  }
+}
+
+
+
+
+
+
+
+
