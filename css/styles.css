@@ -94,24 +94,26 @@ sub {
 /* Demo Styles - Do most of your work here.                                                       */
 /* ============================================================================================== */
 
-/*  SECTIONS  */
-/*.section {
+ SECTIONS  
+ .section {
   clear: both;
   padding: 0px;
-  margin: 0px;*/
+  margin: 0px;
 }
 
-/*  COLUMN SETUP  */
-/*.col {
+ COLUMN SETUP 
+ .col {
   display: block;
   float:left;
   margin: 1% 0 1% 1.6%;
 }
-.col:first-child { margin-left: 0; }
-*/
+ .col:first-child { 
+  margin-left: 0; 
+}
 
-/*  GROUPING  */
-/*.group:before,
+
+ GROUPING 
+.group:before,
 .group:after {
   content:"";
   display:table;
@@ -120,7 +122,7 @@ sub {
   clear:both;
 }
 .group {
-    zoom:1; *//* For IE 6/7 */
+    zoom:1; 
 }
 
 
@@ -145,7 +147,7 @@ sub {
 
 .span_4_of_8 {
   width: 49.2%; 
-  margin: auto; /*added*/
+  /*margin: auto;*/ /*added*/
 }
 
 .span_3_of_8 {
@@ -160,11 +162,13 @@ sub {
   width: 11.1%; 
 }
 
-/*font sizes==============================*/
+/*font types and sizes==============================*/
 
 p {
   font-size: 19px; /*16px*/
-  line-height: 
+  margin-bottom: 1%;
+  font-family: 'Cabin', 'sans-serif';
+  color: #00001B;
 }
 
 
@@ -173,18 +177,14 @@ body {
   padding: 1%;
 }
 
-p {
-  margin-bottom: 1%;
-  font-family: 'Lora', 'serif';
-}
-
 a {
   text-decoration: none;
+  color: #0F8FA6;
 }
 
 section {
   padding: 1%;
-  margin: 0 auto;
+  /*margin: 0 auto;*/
 }
 
 img {
@@ -194,42 +194,57 @@ img {
 
 figcaption {
   text-align: center;
+  font-family: 'Lato', 'sans-serif;
+}
+
+header {
+ margin: 0 auto;
 }
 
 .table-of-contents {
-  position: fixed;
-  right: -1%;
+  float: left;
+
 }
 
+.intro-para {
+}
 
+img {
+  float: left;
+}
 
 /* images ===============================*/
 .img1 { 
-
-}
-
-.img2 {/*drawing of woman*/
+  /*width: 88%;*/
   
 }
 
-.img3 { /*northwind*/
+.img2 {/*drawing of woman*/
+ /* width: 100%;*/
+}
 
+.img3 { /*northwind*/
+/*  width: 100%;*/
 }
 
 .img4 { /*wisdom*/
-
+/*  width: 100%;*/
 }
 
 .img5 { /*lapworth*/
-
+  /*width: 75%;*/
 }
 
-.img6 { /*hotel*/
-
+.img6 { /*hotel seahorse*/
+  /*width: 75%;*/
 }
 
-.img7 { /*hotel*/
+.img7 { /*gillsans*/
+  /*width: 75%;*/
+}
 
+.img8 { /*plaque*/
+  /*width: 85%;*/
 }
 
 /* Clearfix class =============================================================================== */
