@@ -165,12 +165,25 @@ sub {
 /*font types and sizes==============================*/
 
 p {
-  font-size: 19px; /*16px*/
+  font-size: 18px; /*16px*/
   margin-bottom: 1%;
+  color: #00001B;
+}
+
+
+p, li {
   font-family: 'Cabin', 'sans-serif';
   color: #00001B;
 }
 
+h2 {
+  font-family: Perpetua, Baskerville, "Big Caslon", "Palatino Linotype", Palatino, "URW Palladio L", "Nimbus Roman No9 L", serif;
+  font-size: 20px;
+}
+
+h3 {
+  
+}
 
 /*  general styles   =================== */
 body {
@@ -194,7 +207,7 @@ img {
 
 figcaption {
   text-align: center;
-  font-family: 'Lato', 'sans-serif;
+  font-family: 'Lato', 'sans-serif';
 }
 
 header {
@@ -209,11 +222,18 @@ header {
 .intro-para {
 }
 
+
+
+/* images ===============================*/
 img {
   float: left;
 }
 
-/* images ===============================*/
+.four-images {
+  float: left;
+}
+
+
 .img1 { 
   /*width: 88%;*/
   
