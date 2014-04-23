@@ -1,3 +1,53 @@
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol, ul {
+  list-style: none;
+}
+blockquote, q {
+  quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
 /* ============================================================================================== */
 /* Reset Styles                                                                                   */
 /* ============================================================================================== */
@@ -105,11 +155,13 @@ sub {
  .col {
   display: block;
   float:left;
-  margin: 1% 0 1% 1.6%;
+  display: inline-block;
+  /*margin: 1% 0 1% 1.6%;*/
 }
- .col:first-child { 
+ 
+ /*.col:first-child { 
   margin-left: 0; 
-}
+}*/
 
 
  GROUPING 
@@ -176,18 +228,35 @@ p, li {
   color: #00001B;
 }
 
+h1 {
+  font-family: Perpetua, Baskerville, "Big Caslon", "Palatino Linotype", Palatino, "URW Palladio L", "Nimbus Roman No9 L", serif;
+  font-size: 36px;
+  color: #00001B;
+}
+
+cite {
+  font-family: 'Cabin', 'sans-serif';
+  font-size: 14px;
+  color: #00001B;
+}
+
 h2 {
   font-family: Perpetua, Baskerville, "Big Caslon", "Palatino Linotype", Palatino, "URW Palladio L", "Nimbus Roman No9 L", serif;
-  font-size: 20px;
+  font-size: 24px;
 }
 
 h3 {
-  
+  font-family: Perpetua, Baskerville, "Big Caslon", "Palatino Linotype", Palatino, "URW Palladio L", "Nimbus Roman No9 L", serif;
+  font-size: 18px;
+  font-style: italic;
 }
 
 /*  general styles   =================== */
 body {
   padding: 1%;
+  width: 60em;
+  margin: 0 auto; 
+ 
 }
 
 a {
@@ -196,51 +265,75 @@ a {
 }
 
 section {
-  padding: 1%;
-  /*margin: 0 auto;*/
+  padding-top: 2%;
 }
 
 img {
   display: block;
   margin: auto;
+  height: auto;  
+  width: 75%;
 }
 
 figcaption {
-  text-align: center;
   font-family: 'Lato', 'sans-serif';
+  font-weight: 300;
+  text-align: center;
 }
 
 header {
  margin: 0 auto;
 }
 
+footer {
+  display: inline-block;
+}
+
+/*  custom div styles   =================== */
+
+.intro-text, 
+.earlylife-text, 
+.sculpture-text,
+.hotel-text,
+.typeface-text {
+  display: inline-block;
+}
+
 .table-of-contents {
-  float: left;
-
+  display: inline-block;
 }
 
-.intro-para {
+.offset-3 {
+  display: inline-block;
+  margin-left: 36.5%;
 }
+
+
+
 
 
 
 /* images ===============================*/
-img {
-  float: left;
+.intro-image,
+.four-images,
+.seahorse,
+.two-images  {
+  display: inline-block;
+  vertical-align: top;
 }
 
-.four-images {
-  float: left;
+.four-images figure {
+  margin-top: 14%;
 }
 
 
-.img1 { 
-  /*width: 88%;*/
-  
+.img1 {
+ 
 }
 
 .img2 {/*drawing of woman*/
  /* width: 100%;*/
+
 }
 
 .img3 { /*northwind*/
@@ -257,6 +350,7 @@ img {
 
 .img6 { /*hotel seahorse*/
   /*width: 75%;*/
+  /*float: left;*/
 }
 
 .img7 { /*gillsans*/
