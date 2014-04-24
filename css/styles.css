@@ -217,20 +217,25 @@ sub {
 /*font types and sizes==============================*/
 
 p {
-  font-size: 18px; /*16px*/
+  font-size: 18px; 
   margin-bottom: 1%;
   color: #00001B;
+  line-height: 1.7em;
 }
 
 
 p, li {
-  font-family: 'Cabin', 'sans-serif';
+  font-family: 'Lato', 'sans-serif';
   color: #00001B;
+}
+
+subsection p {
+  margin-bottom: 3%;
 }
 
 h1 {
   font-family: Perpetua, Baskerville, "Big Caslon", "Palatino Linotype", Palatino, "URW Palladio L", "Nimbus Roman No9 L", serif;
-  font-size: 36px;
+  font-size: 60px;
   color: #00001B;
 }
 
@@ -241,27 +246,34 @@ cite {
 }
 
 h2 {
-  font-family: Perpetua, Baskerville, "Big Caslon", "Palatino Linotype", Palatino, "URW Palladio L", "Nimbus Roman No9 L", serif;
-  font-size: 24px;
+  font-family: 'Lato', 'serif';
+  font-size: 32px;
+  font-weight: 700;
 }
 
 h3 {
-  font-family: Perpetua, Baskerville, "Big Caslon", "Palatino Linotype", Palatino, "URW Palladio L", "Nimbus Roman No9 L", serif;
-  font-size: 18px;
+  font-family: 'Lato', 'serif';
+  font-size: 20px;
+  font-weight: 700;
   font-style: italic;
+  padding-top: 2%;
 }
 
 /*  general styles   =================== */
 body {
-  padding: 1%;
-  width: 60em;
-  margin: 0 auto; 
+  padding: 2%;
+  width: 58em;
+  margin: 0 9em; 
  
 }
 
 a {
   text-decoration: none;
   color: #0F8FA6;
+}
+
+li {
+  list-style-type: circle;
 }
 
 section {
@@ -272,8 +284,8 @@ img {
   display: block;
   margin: auto;
   height: auto;  
-  width: 75%;
 }
+
 
 figcaption {
   font-family: 'Lato', 'sans-serif';
@@ -299,8 +311,13 @@ footer {
   display: inline-block;
 }
 
+
 .table-of-contents {
+  /*background-color: #f0ecda;*/
   display: inline-block;
+  vertical-align: top;
+  position: fixed;
+  right: -15%;
 }
 
 .offset-3 {
@@ -308,9 +325,9 @@ footer {
   margin-left: 36.5%;
 }
 
-
-
-
+.section {
+  padding-bottom: 2%;
+}
 
 
 /* images ===============================*/
@@ -322,36 +339,49 @@ footer {
   vertical-align: top;
 }
 
+
 .four-images figure {
   margin-top: 14%;
+  margin-right: 1%;
+}
+
+.seahorse {
+  margin-top: 4%;
+  margin-right: 1%;
+}
+
+.two-images figure {
+  margin-top: 14%;
+  margin-right: 1%;
 }
 
 
+
 .img1 {
+  width: 75%;
  
 }
 
 .img2 {/*drawing of woman*/
- /* width: 100%;*/
+  width: 100%;
 
 }
 
 .img3 { /*northwind*/
-/*  width: 100%;*/
+  width: 100%;
 }
 
 .img4 { /*wisdom*/
-/*  width: 100%;*/
+  width: 100%;
 }
 
 .img5 { /*lapworth*/
-  /*width: 75%;*/
+  width: 75%;
 }
 
 .img6 { /*hotel seahorse*/
-  /*width: 75%;*/
-  /*float: left;*/
-}
+  width: 75%;
+  }
 
 .img7 { /*gillsans*/
   /*width: 75%;*/
