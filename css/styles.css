@@ -229,7 +229,7 @@ p, li {
   color: #00001B;
 }
 
-subsection p {
+.subsection p {
   margin-bottom: 3%;
 }
 
@@ -244,6 +244,7 @@ cite {
   font-size: 14px;
   color: #00001B;
 }
+
 
 h2 {
   font-family: 'Lato', 'serif';
@@ -260,6 +261,12 @@ h3 {
 }
 
 /*  general styles   =================== */
+* { 
+  -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+  -moz-box-sizing: border-box;    /* Firefox, other Gecko */
+  box-sizing: border-box;         /* Opera/IE 8+ */
+}
+
 body {
   padding: 2%;
   width: 58em;
@@ -315,9 +322,9 @@ footer {
 .table-of-contents {
   /*background-color: #f0ecda;*/
   display: inline-block;
-  vertical-align: top;
   position: fixed;
-  right: -15%;
+  top: 18%;
+  right: 1%;
 }
 
 .offset-3 {
@@ -356,25 +363,27 @@ footer {
 }
 
 
-
-.img1 {
+.seahorse figcaption,  .lapworth figcaption {
   width: 75%;
- 
+  position: relative;
+  margin: auto
 }
 
-.img2 {/*drawing of woman*/
-  width: 100%;
 
+.img1,
+.img5,
+.img6 {
+  width: 75%;
 }
 
-.img3 { /*northwind*/
-  width: 100%;
+.img2,
+.img3,
+.img4 {
+  width: 90%;
 }
 
-.img4 { /*wisdom*/
-  width: 100%;
-}
 
+  
 .img5 { /*lapworth*/
   width: 75%;
 }
@@ -384,12 +393,22 @@ footer {
   }
 
 .img7 { /*gillsans*/
-  /*width: 75%;*/
+  width: 80%;
 }
 
 .img8 { /*plaque*/
-  /*width: 85%;*/
+  width: 85%;
 }
+
+/* IMAGE KEY
+  .img1 intro image 
+  .img2 drawing of woman
+  .img3 northwind
+  .img4 wisdom
+  .img5 lapworth
+  .img6 hotel seahorse
+  .img7 gillsans
+  .img8 plaque*/
 
 /* Clearfix class =============================================================================== */
 .clearfix { *zoom: 1; }
@@ -400,7 +419,36 @@ footer {
 
 
 
-/*  GRID OF TEN media queries ==================================================================== */
+/*  GRID OF EIGHT media queries ==================================================================== */
+
+@media only screen and (min-width: 1050px) and (max-width: 1660px) {
+  .table-of-contents {
+     display: inline-block;
+     position: absolute;
+     top: 30em;
+     left: 14em;
+  }
+} /*end media query*/
+
+
+@media only screen and (min-width: 750px) and (max-width: 1049px) {
+ .intro-image {
+    display: inline-block;
+    position: relative;
+    width: 50%;
+    margin: 0 auto;
+  }
+
+  .table-of-contents {
+     display: inline-block;
+     position: relative;
+     top: auto;
+     left: 30em;
+  }     
+
+
+} /*end media query*/
+
 
 /*  GO FULL WIDTH AT LESS THAN 480 PIXELS */
 
