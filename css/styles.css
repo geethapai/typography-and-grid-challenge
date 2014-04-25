@@ -65,7 +65,7 @@ table {
 
 body {
   font-family: serif;
-  font-size: 100%;
+  font-size: 1em;
 }
 
 p {
@@ -217,7 +217,7 @@ sub {
 /*font types and sizes==============================*/
 
 p {
-  font-size: 18px; 
+  font-size: 1.125em; 
   margin-bottom: 1%;
   color: #00001B;
   line-height: 1.7em;
@@ -235,26 +235,26 @@ p, li {
 
 h1 {
   font-family: Perpetua, Baskerville, "Big Caslon", "Palatino Linotype", Palatino, "URW Palladio L", "Nimbus Roman No9 L", serif;
-  font-size: 60px;
+  font-size: 3.750em;
   color: #00001B;
 }
 
 cite {
   font-family: 'Cabin', 'sans-serif';
-  font-size: 14px;
+  font-size:  0.875em;
   color: #00001B;
 }
 
 
 h2 {
   font-family: 'Lato', 'serif';
-  font-size: 32px;
+  font-size: 2em;
   font-weight: 700;
 }
 
 h3 {
   font-family: 'Lato', 'serif';
-  font-size: 20px;
+  font-size: 1.250em;
   font-weight: 700;
   font-style: italic;
   padding-top: 2%;
@@ -270,7 +270,7 @@ h3 {
 body {
   padding: 2%;
   width: 58em;
-  margin: 0 9em; 
+  margin: 0 20em; 
  
 }
 
@@ -318,13 +318,17 @@ footer {
   display: inline-block;
 }
 
+.intro-text:last-child {
+  background-color: red;
+  padding-top: 1%;
+}
 
 .table-of-contents {
   /*background-color: #f0ecda;*/
   display: inline-block;
   position: fixed;
-  top: 18%;
-  right: 1%;
+  top: 8em;
+  right: -9em;
 }
 
 .offset-3 {
@@ -336,6 +340,17 @@ footer {
   padding-bottom: 2%;
 }
 
+.intro-text p:last-child {
+  padding-top: 2%;
+}
+
+.typeface-text li:last-child {
+  padding-bottom: 4%;
+}
+
+#published-writing li:last-child {
+  padding-bottom: 2%;
+}
 
 /* images ===============================*/
 .intro-image,
@@ -344,6 +359,7 @@ footer {
 .two-images  {
   display: inline-block;
   vertical-align: top;
+  padding-top: 1%;
 }
 
 
@@ -382,21 +398,11 @@ footer {
   width: 90%;
 }
 
-
-  
-.img5 { /*lapworth*/
-  width: 75%;
-}
-
-.img6 { /*hotel seahorse*/
-  width: 75%;
-  }
-
-.img7 { /*gillsans*/
+.img7 { 
   width: 80%;
 }
 
-.img8 { /*plaque*/
+.img8 { 
   width: 85%;
 }
 
@@ -417,67 +423,159 @@ footer {
 
 
 
-
-
 /*  GRID OF EIGHT media queries ==================================================================== */
 
-@media only screen and (min-width: 1050px) and (max-width: 1660px) {
+
+@media only screen and (max-width: 1660px) {
   .table-of-contents {
      display: inline-block;
      position: absolute;
      top: 30em;
-     left: 14em;
+     left: 25em;
   }
-} /*end media query*/
+} /*end media query max 1660*/
 
 
-@media only screen and (min-width: 750px) and (max-width: 1049px) {
+@media only screen and (max-width: 1215px) {
+  
+  body {
+    margin: 0 auto;
+}
+
+  .span_3_of_8 {
+    width: 44.5%;
+}
+  
+  .offset-3 {
+    display: block;
+    margin: 0 auto;
+ }
+
+  header {
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+  }
+
+
  .intro-image {
     display: inline-block;
     position: relative;
-    width: 50%;
     margin: 0 auto;
   }
 
   .table-of-contents {
-     display: inline-block;
+     display: block;
      position: relative;
-     top: auto;
-     left: 30em;
+     top: 1em;
+     left: 0em;
+     width: 35%;
+     padding: 3%;
+     background-color: #f0ecda;
+     margin: 4% auto;
   }     
 
+  .intro-text, 
+  .earlylife-text, 
+  .sculpture-text,
+  .hotel-text,
+  .typeface-text,
+  .personal-life,
+  .subsection {
+     display: block;
+     margin: 0 auto;
 
-} /*end media query*/
-
-
-/*  GO FULL WIDTH AT LESS THAN 480 PIXELS */
-
-@media only screen and (max-width: 480px) {
-  .span_8_of_8 {
-    width: 100%; 
-  }
-  .span_7_of_8 {
-    width: 100%; 
-  }
-  .span_6_of_8 {
-    width: 100%; 
-  }
-  .span_5_of_8 {
-    width: 100%; 
-  }
-  .span_4_of_8 {
-    width: 100%; 
-  }
-  .span_3_of_8 {
-    width: 100%; 
-  }
-  .span_2_of_8 {
-    width: 100%; 
-  }
-  .span_1_of_8 {
-    width: 100%; 
-  }
 }
+
+  .intro-image,
+  .four-images,
+  .seahorse,
+  .two-images {
+    display: block;
+    margin: 0 auto;
+    padding: 4% 0;
+  }
+
+  footer {
+    display: inline-block;
+    width: 60%;
+  }
+*/
+} /*end media query max 1215*/
+
+@media only screen and (max-width: 850px) {
+  body {
+    margin: 0 auto;
+    width: 45em;
+  }
+
+  .span_3_of_8 {
+    width: 58%;
+}
+
+
+ .table-of-contents {
+    width: 45%;
+  }
+
+
+
+  p {
+   /* font-size: 16px;*/
+  }
+
+  h1, 
+  h2,
+  h3 {
+
+  }
+
+} /*end media query max 850*/
+
+@media only screen and (max-width: 575px) {
+  body {
+    margin: 0 auto;
+    width: 32em;
+  }
+
+  .table-of-contents {
+    width: 56%;
+  }
+
+
+  p {
+    /*font-size: 14px;*/
+  }
+  
+  li {
+    /*font-size: 12px;*/
+  }
+
+} /*end media query max 850*/
+
+
+@media only screen and (max-width: 430px) {
+  body {
+    margin: 0 auto;
+    width: 28em;
+  }
+
+  .table-of-contents {
+    width: 56%;
+  }
+
+   p {
+    font-size: 1em;
+  }
+  
+  li {
+    /*font-size: 12px;*/
+  }
+
+} /*end media query max 850*/
+
+
+
 
 
 
