@@ -208,6 +208,8 @@ sub {
   width: 11.1%; 
 }
 
+
+
 /*font types and sizes==============================*/
 
 p {
@@ -228,7 +230,9 @@ li {
   font-size: 1.063em;
 }
 
-
+.table-of-contents li {
+  font-size: 1em;
+}
 
 h1 {
   font-family: Perpetua, Baskerville, "Big Caslon", "Palatino Linotype", Palatino, "URW Palladio L", "Nimbus Roman No9 L", serif;
@@ -320,6 +324,7 @@ blockquote {
 
 footer {
   display: inline-block;
+  border-top: 1px solid #00001B;
 }
 
 
