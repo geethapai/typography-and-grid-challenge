@@ -242,7 +242,7 @@ li {
 h1 {
   font-family: Perpetua, Baskerville, "Big Caslon", "Palatino Linotype", Palatino, "URW Palladio L", "Nimbus Roman No9 L", serif;
   font-size: 5em; /*80px  3.75=60px*/
-  color: #8A7C72; /*#00001B;*/
+  color: #8A7C72; 
 }
 
 cite {
@@ -271,6 +271,7 @@ h3 {
   margin-bottom: 1%;
   border-top: 1px dashed #8A7C72;
   border-bottom: 1px dashed #8A7C72;
+  color: #5E554E;
 }
 
 /*  general styles   =================== */
@@ -299,9 +300,18 @@ a {
   text-decoration: none;
   /*color: #0F8FA6;*/
   /*color: #9C8D81;*/
-  color: #8A7C72;
+  /*color: #8A7C72;*/
+  /*color: #5E554E; no*/
+  color: #916861;
 }
 
+a:hover {
+  color: #0F8FA6;
+}
+
+a:visited {
+  color: none;
+}
 
 li {
   list-style-type: circle;
@@ -328,6 +338,7 @@ figcaption {
   font-family: 'Lato', 'sans-serif';
   font-weight: 300;
   text-align: center;
+  margin-top: 1%;
 }
 
 header {
@@ -365,6 +376,9 @@ footer {
   display: inline-block;
 }
 
+.intro-text {
+  padding: 3% 0;
+}
 
 .table-of-contents {
   /*background-color: #f0ecda;*/
@@ -377,6 +391,10 @@ footer {
 .offset-3 {
   display: inline-block;
   margin-left: 36.5%;
+}
+
+#early-life-and-studies {
+  margin-top: 2%;
 }
 
 .section {
@@ -409,6 +427,10 @@ footer {
 
 .typeface-text p:nth-child(4) {
   margin-bottom: 0%;
+}
+
+#typefaces-and-inscriptions {
+  margin-top: 4%;
 }
 
 .published p:nth-child(3) {
@@ -466,21 +488,23 @@ footer {
 }
 
 
-.img1,
-.img5,
-.img6,
-.img7 {
+.img1 {
   width: 75%;
-}
-
-.img6 {
-  width: 70%;
 }
 
 .img2,
 .img3,
 .img4 {
   width: 90%;
+}
+
+.img5,
+.img7 {
+  width: 70%;
+}
+
+.img6 {
+  width: 65%;
 }
 
 
@@ -509,9 +533,8 @@ footer {
   .table-of-contents {
      display: inline-block;
      position: absolute;
-     top: 32em;
+     top: 34em;
      left: 5em;
-     margin-top: 1%;
   }
 } /*end media query max 1530*/
 
@@ -540,6 +563,10 @@ footer {
   header {
     display: block;
     margin: 0 auto;
+    text-align: center;
+  }
+
+  h2, h3 {
     text-align: center;
   }
 
@@ -594,7 +621,7 @@ footer {
 
 } /*end media query max 1215*/
 
-@media only screen and (max-width: 850px) {
+@media only screen and (max-width: 900px) {
 
   .span_3_of_8 {
     width: 58%;
@@ -602,27 +629,48 @@ footer {
 
 
  .table-of-contents {
-    width: 45%;
+    width: 40%;
   }
 
 } /*end media query max 850*/
 
-@media only screen and (max-width: 575px) {
+@media only screen and (max-width: 760px) {
  
   .table-of-contents {
-    width: 56%;
+    width: 50%;
   }
 
-@media only screen and (max-width: 430px) {
+  h2 {
+    font-size: 2.5em;
+  }
+
+@media only screen and (max-width: 600px) {
+
+  .span_5_of_8 {
+    width: 65%;
+}
 
   .table-of-contents {
-    width: 56%;
+    width: 60%;
+  }
+
+  h2 {
+    text-align: center;
   }
 
    p {
     font-size: 1em;
-  }*/
-  
+  }
+
+@media only screen and (max-width: 500px) {
+
+  .span_5_of_8 {
+    width: 80%;
+}
+
+  .table-of-contents {
+    width: 70%;
+  }
 
 } /*end media query max 850*/
 
