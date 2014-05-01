@@ -148,22 +148,24 @@ sub {
 /* Demo Styles - Do most of your work here.                                                       */
 /* ============================================================================================== */
 
- SECTIONS  
+ /*SECTIONS  */
  .section {
   clear: both;
   padding: 0px;
   margin: 0px;
 }
 
- COLUMN SETUP 
+ /*COLUMN SETUP */
  .col {
   display: block;
   float:left;
   display: inline-block;
+  zoom: 1;
+  *display: inline;
 }
 
 
- GROUPING 
+/* GROUPING */
 .group:before,
 .group:after {
   content:"";
@@ -213,8 +215,84 @@ sub {
 }
 
 
+/*  general styles   =================== */
+* { 
+  -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+  -moz-box-sizing: border-box;    /* Firefox, other Gecko */
+  box-sizing: border-box;         /* Opera/IE 8+ */
+}
 
-/*font types and sizes==============================*/
+article {
+ width: 100%;
+ position: relative;
+ padding: 2%;
+ max-width: 65em;
+ margin: 0 auto;
+}
+
+header {
+ margin: 0 auto;
+ padding-bottom: 2%;
+}
+
+
+footer {
+  display: inline-block;
+  zoom: 1;
+  *display: inline;
+  border-top: 1px solid #00001B;
+}
+
+
+a {
+  text-decoration: none;
+  color: #916861;
+}
+
+
+a:hover {
+  color: #0F8FA6;
+}
+
+
+a:visited {
+  color: none;
+}
+
+
+section {
+  padding-top: 2%;
+}
+
+
+img {
+  display: block;
+  margin: auto;
+  height: auto;  
+}
+
+
+figcaption {
+  font-family: 'Lato', 'sans-serif';
+  font-weight: 300;
+  text-align: center;
+  margin-top: 1%;
+}
+
+
+blockquote {
+  font-style: italic;
+  margin: 0 6%;
+
+}
+
+
+.bullets {
+  margin: 0 6%;
+}
+
+
+/* fonts and sizes==============================*/
 
 p {
   font-size: 1.125em; /*18px*/
@@ -223,14 +301,12 @@ p {
   line-height: 1.7em;
   margin-bottom: 3%;
   font-family: 'Lato', 'sans-serif'; 
- /* font-family: 'Lora', serif;*/
-
 }
 
 
 li {
+  list-style-type: circle;
   font-family: 'Lato', 'sans-serif';
-  /*font-family: 'Lora', serif;*/
   color: #00001B;
   font-size: 1.063em; /*17px*/
 }
@@ -274,91 +350,14 @@ h3 {
   color: #5E554E;
 }
 
-/*  general styles   =================== */
-* { 
-  -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
-  -moz-box-sizing: border-box;    /* Firefox, other Gecko */
-  box-sizing: border-box;         /* Opera/IE 8+ */
-}
-
-body {
-
- /* width: 60em;
-  margin: 0 20em; */
-}
-
-article {
- width: 100%;
- position: relative;
- padding: 2%;
- max-width: 65em;
- margin: 0 auto;
-}
-
-
-a {
-  text-decoration: none;
-  /*color: #0F8FA6;*/
-  /*color: #9C8D81;*/
-  /*color: #8A7C72;*/
-  /*color: #5E554E; no*/
-  color: #916861;
-}
-
-a:hover {
-  color: #0F8FA6;
-}
-
-a:visited {
-  color: none;
-}
-
-li {
-  list-style-type: circle;
-}
-
-
-section {
-  padding-top: 2%;
-}
-
-
-.bullets {
-  margin: 0 6%;
-}
-
-img {
-  display: block;
-  margin: auto;
-  height: auto;  
-}
-
-
-figcaption {
-  font-family: 'Lato', 'sans-serif';
-  font-weight: 300;
-  text-align: center;
-  margin-top: 1%;
-}
-
-header {
- margin: 0 auto;
- padding-bottom: 2%;
-}
-
-blockquote {
-  font-style: italic;
-  margin: 0 6%;
-
-}
-
-footer {
-  display: inline-block;
-  border-top: 1px solid #00001B;
-}
 
 
 /*  custom class, id and div styles   =================== */
+
+.section {
+  padding-bottom: 2%;
+}
+
 
 #introduction {
   background-color: #DEDACA;
@@ -368,74 +367,78 @@ footer {
 }
 
 
+#introduction p:last-of-type {
+  margin-bottom: 0;
+}
+
+
+.table-of-contents {
+  display: inline-block;
+  zoom: 1;
+  *display: inline;
+  position: fixed;
+  top: 8em;
+  right: -19em;
+}
+
+
+.offset-3 {
+  display: inline-block;
+  zoom: 1;
+  *display: inline;
+  margin-left: 36.5%;
+}
+
+
 .intro-text, 
 .earlylife-text, 
 .sculpture-text,
 .hotel-text,
 .typeface-text {
   display: inline-block;
+  zoom: 1;
+  *display: inline;
 }
 
 .intro-text {
   padding: 3% 0;
 }
 
-.table-of-contents {
-  /*background-color: #f0ecda;*/
-  display: inline-block;
-  position: fixed;
-  top: 8em;
-  right: -19em;
-}
-
-.offset-3 {
-  display: inline-block;
-  margin-left: 36.5%;
-}
 
 #early-life-and-studies {
   margin-top: 2%;
 }
 
-.section {
-  padding-bottom: 2%;
-}
 
 .sculpture-text h2 {
   margin-bottom: 2%;
 }
 
+
 .sculpture-text p:last-of-type,
-.typeface-text p:last-of-type
- {
+.typeface-text p:last-of-type {
   margin-bottom: 7%;
 }
+
 
 .typeface-text li:last-child,
 .published li:last-child {
   padding-bottom: 7%;
 }
 
-#introduction p:last-of-type {
-  margin-bottom: 0;
-}
 
-.hotel-text p:last-of-type {
- margin-bottom: 0%;
-}
-
-
-.typeface-text p:nth-child(4) {
+.hotel-text p:last-of-type,
+.typeface-text p:nth-child(4),
+.published p:nth-child(3) {
   margin-bottom: 0%;
 }
+
 
 #typefaces-and-inscriptions {
   margin-top: 4%;
 }
 
-.published p:nth-child(3) {
-  margin-bottom: 0%;
-}
+
 
 /* images ===============================*/
 
@@ -455,6 +458,8 @@ footer {
 .seahorse,
 .two-images  {
   display: inline-block;
+  zoom: 1;
+  *display: inline;
   vertical-align: top;
 }
 
@@ -532,6 +537,8 @@ footer {
 
   .table-of-contents {
      display: inline-block;
+     zoom: 1;
+    *display: inline;
      position: absolute;
      top: 34em;
      left: 5em;
@@ -571,8 +578,10 @@ footer {
   }
 
 
- .intro-image {
+  .intro-image {
     display: inline-block;
+    zoom: 1;
+    *display: inline;
     position: relative;
     margin: 0 auto;
   }
@@ -582,7 +591,7 @@ footer {
      position: relative;
      top: 1em;
      left: 0em;
-     width: 35%;
+     width: 305px;
      padding: 3%;
      background-color: #f0ecda;
      margin: 4% auto;
@@ -610,69 +619,59 @@ footer {
 
   .four-images {
     padding: 0 0 4% 0;
-
   }
 
 
   footer {
     display: inline-block;
+    zoom: 1;
+    *display: inline;
     width: 60%;
   }
 
-} /*end media query max 1215*/
+} /*end media query max 1000*/
 
-@media only screen and (max-width: 900px) {
-
-  .span_3_of_8 {
-    width: 58%;
-}
-
-
- .table-of-contents {
-    width: 40%;
-  }
-
-} /*end media query max 850*/
 
 @media only screen and (max-width: 760px) {
  
-  .table-of-contents {
-    width: 50%;
+.table-of-contents {
+    width: 295px;
   }
 
   h2 {
     font-size: 2.5em;
-  }
+  } 
+
+} /*end media query max 760*/
 
 @media only screen and (max-width: 600px) {
 
+  img {
+    width: 60%;
+  }
+
   .span_5_of_8 {
     width: 65%;
-}
-
-  .table-of-contents {
-    width: 60%;
   }
 
   h2 {
     text-align: center;
+    font-size: 2.125em;
   }
 
-   p {
+  p {
     font-size: 1em;
-  }
+  } 
+
+} /*end media query max 600*/
 
 @media only screen and (max-width: 500px) {
 
   .span_5_of_8 {
     width: 80%;
-}
-
-  .table-of-contents {
-    width: 70%;
   }
 
-} /*end media query max 850*/
+} /*end media query max 500*/
 
 
 
